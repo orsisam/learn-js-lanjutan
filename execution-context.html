@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      ol.decimal {
+        list-style-type: decimal;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Execution Context, Hoisting, and Scope</h1>
+    <hr />
+    <h2>2 Fase pada Excution Context</h2>
+    <ol class="decimal">
+      <li>Creation</li>
+
+      <li>Execution</li>
+    </ol>
+    <p>
+      Cration phase pada Global context. Yang terjadi pada fase ini JS pertama
+      kali akan membaca variabel dan fungsi yang ada di Global Scope. Kemudian
+      variabel tersebut akan diisi dengan nilai <code>undefined</code>. Fungsi
+      tersebut juga diisi dengan <code>function() {}</code> atau kode fungsi itu
+      sendiri. Inilah yang dinamakan dengan konsep <code>Hoisting</code>.
+    </p>
+    <p>Function membuat excution contextnya sendiri</p>
+    <a
+      href="https://pythontutor.com/render.html#code=function%20satu%28%29%20%7B%0A%20%20var%20nama%20%3D%20'Daffa'%3B%0A%20%20console.log%28nama%29%3B%0A%7D%0A%0Afunction%20dua%28%29%20%7B%0A%20%20console.log%28nama%29%3B%0A%7D%0A%0Aconsole.log%28nama%29%3B%0Avar%20nama%20%3D%20'Erik'%3B%0Asatu%28%29%3B%0Adua%28'Doccy'%29%3B%0Aconsole.log%28nama%29%3B&cumulative=false&curInstr=10&heapPrimitives=nevernest&mode=display&origin=opt-frontend.js&py=js&rawInputLstJSON=%5B%5D&textReferences=false"
+      >Contoh Step Execution Creation dan Hosting</a
+    >
+    <script src="js/execution-context.js"></script>
+  </body>
+</html>
