@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Promises</h1>
+    <p>
+      Promise adalah sebuah object yang mrepresentasikan keberhasilan sebuah
+      event yang asynchronous yang akan terjadi di masa akan datang.
+    </p>
+    <p>
+      Promise ini akan menghasilkan dua kemungkinan, yakni terpenuhi dan
+      ingkar(tidak terpenuhi). Pada javascript hal ini dinamakan <b>states</b>.
+      State yang terpenuhi dinamakan <i>fulfilled</i>, sedangkan yang tidak
+      terpenuhi dinamakan <i>rejected</i>. Dan ada satu lagi state yakni
+      <i>pending</i>.
+    </p>
+    <p>
+      Pada promise ini ketika state pada suatu kondisi juga akan menjalankan
+      callback. Jika fulfilled maka menjalankan fungsi callback <i>resolve</i>,
+      ketika rejected maka akan menjalankan fungsi callback <i>reject</i>. Dan
+      terkahir adalah fungsi callback <i>finally</i> yang akan dijalankan apapun
+      kondisi yang terjadi.
+    </p>
+    <p>
+      Di dalam promise ada aksi ketika janji terpenuhi atau tidak terpenuhi.
+      Jika terpenuhi aksi yang dilakukan adalah <i>then</i> dan jika tidak
+      terpenihu aksi yang dijalankan <i>catch</i>.
+    </p>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/promise.js"></script>
+  </body>
+</html>
